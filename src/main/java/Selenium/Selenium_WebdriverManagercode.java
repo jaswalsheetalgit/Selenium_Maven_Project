@@ -28,7 +28,7 @@ public class Selenium_WebdriverManagercode {
         capabilities.setCapability(ChromeOptions.CAPABILITY, option);
         capabilities.setBrowserName("chrome");
         option.merge(capabilities);
-        WebDriverManager.chromedriver().setup();
+       // WebDriverManager.chromedriver().setup();
         WebDriver  driver = new ChromeDriver(option);
         driver.get("https://demoqa.com/buttons");
         Thread.sleep(2000);
