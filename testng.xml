@@ -3,10 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   <classes>
-  <class name="Selenium.Action_Class"></class>
-   <class name="Selenium.First_selenium"></class> 
-   <class name="Selenium.Java_Scriptexecutor"></class>
-   <class name="Selenium.Selenium_WebdriverManagercode"></class> 
+   <class name="Selenium.Multiuple_windowhandle"></class>
+  
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
