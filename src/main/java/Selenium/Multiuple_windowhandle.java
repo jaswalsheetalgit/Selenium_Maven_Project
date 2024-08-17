@@ -11,13 +11,15 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Multiuple_windowhandle {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	@Test
+	 public void method() throws InterruptedException
+	 {
 		WebDriverManager.chromedriver().clearDriverCache().setup();
 		WebDriverManager.chromedriver().clearResolutionCache().setup();
 		 WebDriverManager.chromedriver().setup();
@@ -58,7 +60,7 @@ public class Multiuple_windowhandle {
         		 driver.manage().window().maximize();
         	 }
         }
-        
+        driver.quit();
 
 	}
 

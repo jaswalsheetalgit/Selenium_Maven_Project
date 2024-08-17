@@ -7,13 +7,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Selenium_WebdriverManagercode {
 
-	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
+	@Test
+	 public void method() throws InterruptedException
+	 {
 		//System.setProperty("webdriver.chrome.driver","C:\\Users\\hp\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		WebDriverManager.chromedriver().clearDriverCache().setup();
 		WebDriverManager.chromedriver().clearResolutionCache().setup();

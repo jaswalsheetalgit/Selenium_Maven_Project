@@ -9,10 +9,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.Test;
 
 public class Action_Class {
-
-	public static void main(String[] args) throws InterruptedException {
+ 
+    @Test
+	 public void method() throws InterruptedException {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\hp\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		ChromeOptions option = new ChromeOptions();
