@@ -7,13 +7,15 @@ import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.devtools.v116.network.Network;
 import org.openqa.selenium.json.Json;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.Test;
 
 import net.bytebuddy.dynamic.DynamicType.Builder.MethodDefinition.ImplementationDefinition.Optional;
 
 public class networkTabAutomation {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	@Test
+	 public void method() throws InterruptedException
+	 {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\hp\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		ChromeOptions option = new ChromeOptions();
 		option.setBinary("C:\\Users\\hp\\Downloads\\chrome-win64 (1)\\chrome-win64\\chrome.exe");

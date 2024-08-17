@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <classes>
+  <class name="Selenium.Action_Class"></class>
+   <class name="Selenium.First_selenium"></class> 
+   <class name="Selenium.Java_Scriptexecutor"></class>
+   <class name="Selenium.Multiuple_windowhandle"></class>
+   <class name="Selenium.networkTabAutomation"></class>
+   <class name="Selenium.Selenium_WebdriverManagercode"></class> 
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
