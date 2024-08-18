@@ -36,10 +36,13 @@ public class Java_Scriptexecutor {
         WebElement doubleclicktex = driver.findElement(By.xpath("//*[text()='You have done a double click']"));
         boolean doubleclicktext = driver.findElement(By.xpath("//*[text()='You have done a double click']")).isDisplayed();
         System.out.println("Double click "+doubleclicktext);
+        Thread.sleep(2000);
         js.executeScript("arguments[0].style.background='yellow'", doubleclicktex);
+        Thread.sleep(2000);
         WebElement RightClick = driver.findElement(By.xpath("//*[@id='rightClickBtn']"));
         action.contextClick(RightClick).build().perform();
         boolean rightClick = driver.findElement(By.xpath("//*[contains(text(),'You have done a right click')]")).isEnabled();
+        Thread.sleep(2000);
         System.out.println("Right click "+rightClick);
         WebElement click = driver.findElement(By.xpath("//*[text()='Click Me']"));
         action.click(click).build().perform();
@@ -54,14 +57,23 @@ public class Java_Scriptexecutor {
         WebElement currentaddress = driver.findElement(By.xpath("//*[@id='currentAddress']"));
         WebElement permanentaddress = driver.findElement(By.xpath("//*[@id='permanentAddress']"));
         WebElement SubmitBtn = driver.findElement(By.xpath("//*[@id='submit']"));
+        Thread.sleep(2000);
         js.executeScript("arguments[0].style.background='red'", fullnameLabel);
+        Thread.sleep(2000);
         js.executeScript("arguments[0].value='sheetal Jaswal';", fullnameTxt);
+        Thread.sleep(2000);
         js.executeScript("arguments[0].style.background='pink'", EmailTxtLabel);
+        Thread.sleep(2000);
         EmailTxt.sendKeys("jaswal@gmsil.com");
+        Thread.sleep(2000);
         js.executeScript("arguments[0].value='Himachal Pradesh';", currentaddress);
+        Thread.sleep(2000);
         js.executeScript("arguments[0].style.background='red'", currentaddress);
+        Thread.sleep(2000);
         js.executeScript("arguments[0].value='Punjab';", permanentaddress);
+        Thread.sleep(2000);
         js.executeScript("arguments[0].click();", SubmitBtn);
+        Thread.sleep(2000);
         Thread.sleep(5000);
         driver.close();
         
