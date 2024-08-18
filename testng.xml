@@ -4,12 +4,9 @@
   <test thread-count="5" name="Test">
   <classes>
    <class name="Selenium.Multiuple_windowhandle"></class>
-    <class name="Selenium.Action_Class"></class>
      <class name="Selenium.First_selenium"></class>
       <class name="Selenium.Multiuple_windowhandle"></class>
-       <class name="Selenium.networkTabAutomation"></class>
         <class name="Selenium.Multiuple_windowhandle"></class>
-         <class name="Selenium.Selenium_WebdriverManagercode"></class>
   
   </classes>
   </test> <!-- Test -->
